@@ -1,5 +1,6 @@
 {
   "skills": [
+    { "name": "typescript-style", "path": "typescript-style" },
     { "name": "react-style", "path": "react-style" }
   ]
 }
