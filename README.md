@@ -31,11 +31,11 @@ Then use skills like `@jorisre/typescript-style`, `@jorisre/react-style`, etc.
 
 ## Structure
 
-Each skill folder contains:
-- `SKILL.md` — Rules and examples
-- Optional: `scripts/` for helper utilities
+All rules are organized under `skills/`:
+- `skills/SKILL.md` — Unified index with descriptions and links to all 9 rules
+- `skills/rules/` — Individual markdown files for each rule
 
-All skills in `skills.json` manifest.
+The `skills/SKILL.md` index serves as the source of truth for discovering available rules.
 
 ## Local Development
 

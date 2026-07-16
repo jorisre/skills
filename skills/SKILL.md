@@ -21,7 +21,7 @@ Enforce consistent file and directory naming conventions. Files and folders use 
 ### 2. typescript-ternary
 **Explicit ternaries, no short-circuit `&&`**
 
-Enforce explicit ternary patterns. Never use `&&` operator for conditional logic—always use `condition ? value : null`. Makes intent clear and prevents bugs.
+Enforce explicit ternary patterns for conditional rendering and value selection. Avoid short-circuit operators (`&&`, `||`) for conditional logic—always use `condition ? value : null`. Makes intent clear and prevents bugs.
 
 📖 Full rules: [`rules/typescript-ternary.md`](rules/typescript-ternary.md)
 
