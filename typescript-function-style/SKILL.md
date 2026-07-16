@@ -11,7 +11,7 @@ Enforce explicit, readable function patterns. Named functions use declaration sy
 ## General Rules
 
 ### 1. Named Functions — Use Function Declaration
-For **all named, reusable functions** (whether exported, used elsewhere, or called directly), use the explicit declaration syntax. This applies even if the function is called immediately or used in code:
+For **all named functions** (whether exported, used elsewhere, or called directly), use the explicit declaration syntax. This applies to every named function, regardless of how it's used or whether it's reused:
 
 ```typescript
 // ❌ Bad — arrow function for named function
