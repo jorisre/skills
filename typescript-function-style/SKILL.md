@@ -70,11 +70,19 @@ const handleClick = () => {
 <button onClick={handleClick}>Click</button>
 
 // ✅ Good — named handler as function declaration (inside component)
-function handleSelectLocale(code: Locale) {
-  persistLocaleCookie(code);
-  router.push(redirectedPathname(pathname ?? "/", code));
+export function LocaleSelector() {
+  const [locale, setLocale] = React.useState("en");
+
+  function handleSelectLocale(code: string) {
+    setLocale(code);
+  }
+
+  return (
+    <button onClick={() => handleSelectLocale("fr")}>
+      Change to French
+    </button>
+  );
 }
-<button onClick={() => handleSelectLocale(code)}>Change Language</button>
 
 // ✅ Good — named handler defined outside component
 function handleClick() {
