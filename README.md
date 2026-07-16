@@ -1,16 +1,26 @@
-# dev-skills
+# skills
 
-Personal Claude skills library for consistent JavaScript/TypeScript and React code style.
+Repository of Claude skill sets for code style, conventions, and development practices.
 
-## Install
+## Quick Start
+
+### Install a Skill Set
 
 ```bash
-npx skills add jorisre/dev-skills
+npx skills add https://github.com/jorisre/skills --skill jorisre-kit
 ```
 
-Then use skills like `@jorisre/typescript-style`, `@jorisre/react-style`, etc.
+### Available Skill Sets
 
-## Skills (9 total)
+- **`jorisre-kit`** — My personal preferences for TypeScript, React, Tailwind, and code quality
+
+For a complete list, see [SKILLS_INDEX.md](SKILLS_INDEX.md).
+
+## What's Inside
+
+### jorisre-kit
+
+9 coding conventions covering:
 
 **TypeScript (4)**
 - `typescript-style` — Kebab-case files/dirs, framework conventions
@@ -29,19 +39,26 @@ Then use skills like `@jorisre/typescript-style`, `@jorisre/react-style`, etc.
 **General (1)**
 - `code-simplicity` — Readability first, simple and clear code
 
-## Structure
+## Repository Structure
 
-All rules are organized under `skills/`:
-- `skills/SKILL.md` — Unified index with descriptions and links to all 9 rules
-- `skills/rules/` — Individual markdown files for each rule
+```
+skills/
+└── jorisre-kit/
+    ├── SKILL.md (index of all rules)
+    └── rules/ (individual rule files)
+```
 
-The `skills/SKILL.md` index serves as the source of truth for discovering available rules.
+To explore a skill set, read `/skills/{skill-set-name}/SKILL.md`.
+
+## Creating Your Own Skill Set
+
+See [SKILLS_INDEX.md](SKILLS_INDEX.md#creating-a-new-skill-set) for how to add a new skill set to this repository.
 
 ## Local Development
 
 ```bash
-git clone https://github.com/jorisre/dev-skills.git
-cd dev-skills
+git clone https://github.com/jorisre/skills.git
+cd skills
 ```
 
 ## License
