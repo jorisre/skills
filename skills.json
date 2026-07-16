@@ -1,3 +1,5 @@
 {
-  "skills": []
+  "skills": [
+    { "name": "react-style", "path": "react-style" }
+  ]
 }
