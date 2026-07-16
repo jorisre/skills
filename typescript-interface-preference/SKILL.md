@@ -162,6 +162,24 @@ interface EventEmitter {
 type Middleware = (req: Request, res: Response) => void;
 ```
 
+### 10. Import Types
+When importing type-only declarations, use the `type` import keyword:
+
+```typescript
+// ✅ Good — type imports
+import { type User } from "./types";
+import { type ButtonProps } from "./components/button";
+
+// ✅ Also good — multiple type imports
+import { type User, type ApiResponse } from "./api/types";
+
+// ✅ Mixed imports (values and types)
+import { Logger, type LogLevel } from "./logger";
+
+// ❌ Avoid — creates runtime dependency even when User is only used in types
+import { User } from "./types"; // includes module in bundle even if only used for types
+```
+
 ---
 
 ## Examples

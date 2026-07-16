@@ -8,7 +8,7 @@ Personal Claude skills library for consistent JavaScript/TypeScript and React co
 npx skills add jorisre/dev-skills
 ```
 
-## Skills
+## Skills (9 total)
 
 **TypeScript (4)**
 - `typescript-style` — Kebab-case files/dirs, framework conventions
