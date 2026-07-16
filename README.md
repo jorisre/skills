@@ -8,6 +8,8 @@ Personal Claude skills library for consistent JavaScript/TypeScript and React co
 npx skills add jorisre/dev-skills
 ```
 
+Then use skills like `@jorisre/typescript-style`, `@jorisre/react-style`, etc.
+
 ## Skills (9 total)
 
 **TypeScript (4)**
