@@ -56,16 +56,27 @@ array.forEach((item) => {
 ```
 
 ### 3. Event Handlers (React/DOM)
-Event handlers passed to components or elements use arrow functions:
+**Named event handlers** use declaration syntax. **Inline callbacks** use arrow functions.
+
+The distinction is:
+- **Named handler** (even inside component) = `function handleX() {}` declaration
+- **Inline callback** = arrow function `() => {}`
 
 ```typescript
-// ❌ Bad
-function handleClick() {
+// ❌ Bad — named handler as arrow function
+const handleClick = () => {
   doSomething();
-}
+};
 <button onClick={handleClick}>Click</button>
 
-// ✅ Good — define function separately for clarity
+// ✅ Good — named handler as function declaration (inside component)
+function handleSelectLocale(code: Locale) {
+  persistLocaleCookie(code);
+  router.push(redirectedPathname(pathname ?? "/", code));
+}
+<button onClick={() => handleSelectLocale(code)}>Change Language</button>
+
+// ✅ Good — named handler defined outside component
 function handleClick() {
   doSomething();
 }
@@ -73,7 +84,7 @@ export const Component = () => {
   return <button onClick={handleClick}>Click</button>;
 };
 
-// ✅ Good — inline arrow callback
+// ✅ Good — inline arrow callback (ONLY for simple inline logic)
 <button onClick={() => doSomething()}>Click</button>
 ```
 
