@@ -11,7 +11,7 @@ Enforce explicit, readable function patterns. Named functions use declaration sy
 ## General Rules
 
 ### 1. Named Functions — Use Function Declaration
-For all named, reusable functions, use the explicit declaration syntax:
+For **all named functions** (whether exported, used elsewhere, or called directly), use the explicit declaration syntax. This applies to every named function, regardless of how it's used or whether it's reused:
 
 ```typescript
 // ❌ Bad — arrow function for named function
@@ -19,9 +19,21 @@ const getUserName = (user: User): string => {
   return user.name;
 };
 
+// ❌ Bad — even if called in code, still wrong
+const handleSelectLocale = (code: Locale) => {
+  persistLocaleCookie(code);
+  router.push(redirectedPathname(pathname ?? "/", code));
+};
+
 // ✅ Good — clear function declaration
 function getUserName(user: User): string {
   return user.name;
+}
+
+// ✅ Good — named function, even if called elsewhere
+function handleSelectLocale(code: Locale) {
+  persistLocaleCookie(code);
+  router.push(redirectedPathname(pathname ?? "/", code));
 }
 ```
 
