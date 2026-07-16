@@ -176,8 +176,8 @@ import { type User, type ApiResponse } from "./api/types";
 // ✅ Mixed imports (values and types)
 import { Logger, type LogLevel } from "./logger";
 
-// ❌ Bad — importing interface as value
-import { User } from "./types"; // works but not explicit it's a type
+// ❌ Avoid — creates runtime dependency even when User is only used in types
+import { User } from "./types"; // includes module in bundle even if only used for types
 ```
 
 ---
