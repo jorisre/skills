@@ -1,3 +1,13 @@
 {
-  "skills": []
+  "skills": [
+    { "name": "typescript-style", "path": "typescript-style" },
+    { "name": "typescript-ternary", "path": "typescript-ternary" },
+    { "name": "typescript-function-style", "path": "typescript-function-style" },
+    { "name": "typescript-interface-preference", "path": "typescript-interface-preference" },
+    { "name": "react-style", "path": "react-style" },
+    { "name": "react-component-wrapper", "path": "react-component-wrapper" },
+    { "name": "react-no-render-functions", "path": "react-no-render-functions" },
+    { "name": "tailwind-class-merging", "path": "tailwind-class-merging" },
+    { "name": "code-simplicity", "path": "code-simplicity" }
+  ]
 }
