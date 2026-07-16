@@ -6,6 +6,7 @@
     { "name": "typescript-interface-preference", "path": "typescript-interface-preference" },
     { "name": "react-style", "path": "react-style" },
     { "name": "react-component-wrapper", "path": "react-component-wrapper" },
-    { "name": "tailwind-class-merging", "path": "tailwind-class-merging" }
+    { "name": "tailwind-class-merging", "path": "tailwind-class-merging" },
+    { "name": "code-simplicity", "path": "code-simplicity" }
   ]
 }
