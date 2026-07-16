@@ -1,13 +1,13 @@
 {
   "skills": [
-    { "name": "@jorisre/typescript-style", "path": "typescript-style" },
-    { "name": "@jorisre/typescript-ternary", "path": "typescript-ternary" },
-    { "name": "@jorisre/typescript-function-style", "path": "typescript-function-style" },
-    { "name": "@jorisre/typescript-interface-preference", "path": "typescript-interface-preference" },
-    { "name": "@jorisre/react-style", "path": "react-style" },
-    { "name": "@jorisre/react-component-wrapper", "path": "react-component-wrapper" },
-    { "name": "@jorisre/react-no-render-functions", "path": "react-no-render-functions" },
-    { "name": "@jorisre/tailwind-class-merging", "path": "tailwind-class-merging" },
-    { "name": "@jorisre/code-simplicity", "path": "code-simplicity" }
+    { "name": "@jorisre/typescript-style", "path": "jorisre/typescript-style" },
+    { "name": "@jorisre/typescript-ternary", "path": "jorisre/typescript-ternary" },
+    { "name": "@jorisre/typescript-function-style", "path": "jorisre/typescript-function-style" },
+    { "name": "@jorisre/typescript-interface-preference", "path": "jorisre/typescript-interface-preference" },
+    { "name": "@jorisre/react-style", "path": "jorisre/react-style" },
+    { "name": "@jorisre/react-component-wrapper", "path": "jorisre/react-component-wrapper" },
+    { "name": "@jorisre/react-no-render-functions", "path": "jorisre/react-no-render-functions" },
+    { "name": "@jorisre/tailwind-class-merging", "path": "jorisre/tailwind-class-merging" },
+    { "name": "@jorisre/code-simplicity", "path": "jorisre/code-simplicity" }
   ]
 }
