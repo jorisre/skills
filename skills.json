@@ -2,6 +2,7 @@
   "skills": [
     { "name": "typescript-style", "path": "typescript-style" },
     { "name": "typescript-ternary", "path": "typescript-ternary" },
+    { "name": "typescript-function-style", "path": "typescript-function-style" },
     { "name": "react-style", "path": "react-style" }
   ]
 }
