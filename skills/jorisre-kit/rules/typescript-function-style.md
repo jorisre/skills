@@ -8,6 +8,31 @@ description: Enforce function declaration syntax for named functions and arrow f
 ## Purpose
 Enforce explicit, readable function patterns. Named functions use declaration syntax for clarity; callbacks use arrow functions for conciseness.
 
+---
+
+## 🔴 CRITICAL RULE — DO NOT TRANSFORM
+
+**NEVER convert a named function from declaration syntax to arrow function syntax.**
+
+This is a critical transformation rule to prevent:
+
+```typescript
+// ❌ NEVER DO THIS TRANSFORMATION
+// Before (correct):
+function handleClick() {
+  doSomething();
+}
+
+// After (WRONG — DO NOT DO):
+const handleClick = () => {
+  doSomething();
+};
+```
+
+**Why:** If a function has a name (`handleClick`, `processData`, `getUserName`), it MUST stay as `function Name() {}`. The syntax form is determined by whether the function is **named** (use declaration) or **unnamed/callback** (use arrow). Location doesn't matter—inside a component, module, or class—if it has a name, it's a declaration.
+
+---
+
 ## General Rules
 
 ### 1. Named Functions — Use Function Declaration
@@ -291,6 +316,45 @@ fetch(url).then(function(response) {
 items.filter(function(item) {
   return item.active;
 });
+```
+
+### ⚠️ Transformation Anti-patterns (NEVER DO THESE)
+
+```typescript
+// ❌ NEVER transform this:
+// Before (correct):
+function handleSelectLocale(code: Locale) {
+  persistLocaleCookie(code);
+  router.push(redirectedPathname(pathname ?? "/", code));
+}
+
+// After (WRONG — DO NOT TRANSFORM TO):
+const handleSelectLocale = (code: Locale) => {
+  persistLocaleCookie(code);
+  router.push(redirectedPathname(pathname ?? "/", code));
+};
+
+// ❌ NEVER transform this:
+// Before (correct):
+function processData(items: Item[]) {
+  return items.map(item => item.value);
+}
+
+// After (WRONG — DO NOT TRANSFORM TO):
+const processData = (items: Item[]) => {
+  return items.map(item => item.value);
+};
+
+// ❌ NEVER transform this:
+// Before (correct):
+function handleClick() {
+  doSomething();
+}
+
+// After (WRONG — DO NOT TRANSFORM TO):
+const handleClick = () => {
+  doSomething();
+};
 ```
 
 ## Checklist
