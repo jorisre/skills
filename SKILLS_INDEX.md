@@ -4,7 +4,7 @@ This repository contains multiple skill sets for different development needs.
 
 ## Available Skill Sets
 
-### 🎯 jorisre-kit
+### 🎯 jorisre-guidelines
 **Complete web development guidelines for TypeScript, React, and Tailwind**
 
 My personal collection of coding preferences and conventions for:
@@ -15,10 +15,10 @@ My personal collection of coding preferences and conventions for:
 
 **Install:**
 ```bash
-npx skills add https://github.com/jorisre/skills --skill jorisre-kit
+npx skills add https://github.com/jorisre/skills --skill jorisre-guidelines
 ```
 
-**Location in repo:** `/skills/jorisre-kit/`
+**Location in repo:** `/skills/jorisre-guidelines/`
 
 ---
 
@@ -26,7 +26,7 @@ npx skills add https://github.com/jorisre/skills --skill jorisre-kit
 
 ```
 skills/
-└── jorisre-kit/
+└── jorisre-guidelines/
     ├── SKILL.md (main index of all rules)
     └── rules/
         ├── typescript-style.md
@@ -51,7 +51,7 @@ skills/
 
 2. **Install a specific skill set:**
    ```bash
-   npx skills add https://github.com/jorisre/skills --skill jorisre-kit
+   npx skills add https://github.com/jorisre/skills --skill jorisre-guidelines
    ```
 
 3. **Use it in your projects:** Reference the skill set in your development workflow to enforce consistent coding patterns.

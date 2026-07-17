@@ -1,6 +1,6 @@
 ---
-name: jorisre-kit
-description: Personal coding preferences for TypeScript, React, Tailwind, and code quality. Consistent conventions for modern web development.
+name: jorisre-guidelines
+description: Personal coding guidelines for TypeScript, React, Tailwind, and code quality. Consistent conventions for modern web development.
 ---
 
 # Development Skills Library
