@@ -7,18 +7,18 @@ Repository of Claude skill sets for code style, conventions, and development pra
 ### Install a Skill Set
 
 ```bash
-npx skills add https://github.com/jorisre/skills --skill jorisre-kit
+npx skills add https://github.com/jorisre/skills --skill jorisre-guidelines
 ```
 
 ### Available Skill Sets
 
-- **`jorisre-kit`** — My personal preferences for TypeScript, React, Tailwind, and code quality
+- **`jorisre-guidelines`** — My personal preferences for TypeScript, React, Tailwind, and code quality
 
 For a complete list, see [SKILLS_INDEX.md](SKILLS_INDEX.md).
 
 ## What's Inside
 
-### jorisre-kit
+### jorisre-guidelines
 
 9 coding conventions covering:
 
@@ -43,7 +43,7 @@ For a complete list, see [SKILLS_INDEX.md](SKILLS_INDEX.md).
 
 ```
 skills/
-└── jorisre-kit/
+└── jorisre-guidelines/
     ├── SKILL.md (index of all rules)
     └── rules/ (individual rule files)
 ```
